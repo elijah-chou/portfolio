@@ -1,13 +1,29 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Code2, Palette, Globe, Smartphone } from "lucide-react";
+import { Code2, Server, Award, Brain } from "lucide-react";
 
-const skills = [
-  { name: "Frontend Development", icon: <Code2 className="h-6 w-6" />, description: "Building responsive and interactive user interfaces using React and Next.js." },
-  { name: "UI/UX Design", icon: <Palette className="h-6 w-6" />, description: "Creating beautiful, intuitive designs with a focus on user experience." },
-  { name: "Web Performance", icon: <Globe className="h-6 w-6" />, description: "Optimizing web applications for speed, accessibility, and SEO." },
-  { name: "Responsive Design", icon: <Smartphone className="h-6 w-6" />, description: "Ensuring applications look and work perfectly across all devices and screen sizes." },
+const highlights = [
+  { 
+    name: "Software Engineering", 
+    icon: <Server className="h-6 w-6" />, 
+    description: "Enterprise Java & Spring Boot microservices, Kafka event streaming, Kubernetes, and Cloud native integrations at JPMorganChase." 
+  },
+  { 
+    name: "AI & LLM Solutions", 
+    icon: <Brain className="h-6 w-6" />, 
+    description: "AWS Certified AI Practitioner. Building prompt optimization MCPs, Gemini Pro/PaLM integrations, and vector cache architectures." 
+  },
+  { 
+    name: "Full-Stack Development", 
+    icon: <Code2 className="h-6 w-6" />, 
+    description: "Modern web applications with React, Next.js, TypeScript, Tailwind CSS, Python Flask, PostgreSQL, and Docker." 
+  },
+  { 
+    name: "Research & Academic Excellence", 
+    icon: <Award className="h-6 w-6" />, 
+    description: "Highest Honors Thesis from Emory University in Code Creativity & AST Distance, published at CSEDU 2024. Active GTRI research alumnus." 
+  },
 ];
 
 export default function About() {
@@ -32,28 +48,31 @@ export default function About() {
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            <h3 className="text-2xl font-semibold mb-4">Who am I?</h3>
-            <p className="text-neutral-600 dark:text-neutral-400 mb-6 leading-relaxed">
-              I am a software engineer based in the Atlanta Metropolitan Area, currently working at JPMorganChase. I graduated from the NYU Tandon School of Engineering and hold an AWS Certified AI Practitioner certification.
+            <h3 className="text-2xl font-semibold mb-4">Background & Passion</h3>
+            <p className="text-neutral-600 dark:text-neutral-400 mb-4 leading-relaxed">
+              I am a Software Engineer at <strong>JPMorganChase</strong> in Atlanta. I completed my combined <strong>BS/MS in Computer Science at Emory University</strong> with Highest Honors and am pursuing further graduate studies at the <strong>NYU Tandon School of Engineering</strong>.
+            </p>
+            <p className="text-neutral-600 dark:text-neutral-400 mb-4 leading-relaxed">
+              My honors thesis on <em>"Creativity in Programming: A Code Distance Approach"</em> was published and recognized at <strong>CSEDU 2024</strong>. I've also contributed to research at the <strong>Georgia Tech Research Institute (GTRI)</strong> and worked with innovative R&D teams at <strong>AT&T CDO</strong> on blockchain AI provenance.
             </p>
             <p className="text-neutral-600 dark:text-neutral-400 leading-relaxed">
-              I am passionate about building intelligent solutions. Recently, my team and I secured 2nd place at the JPMorganChase Global Hackathon by building an MCP focused on making AI prompting more cost-efficient through prompt optimization and vector caching.
+              I love building scalable backend architectures, experimenting with the newest generative AI capabilities, and collaborating in hackathons—securing top podium placements at both internal and global competitions!
             </p>
           </motion.div>
 
           <div className="grid sm:grid-cols-2 gap-6">
-            {skills.map((skill, index) => (
+            {highlights.map((item, index) => (
               <motion.div
-                key={skill.name}
+                key={item.name}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: 0.1 * index }}
-                className="bg-white dark:bg-neutral-800 p-6 rounded-2xl shadow-sm border border-neutral-100 dark:border-neutral-700 hover:shadow-md transition-shadow"
+                className="bg-white dark:bg-neutral-800 p-6 rounded-2xl shadow-sm border border-neutral-200 dark:border-neutral-700 hover:shadow-md transition-shadow"
               >
-                <div className="text-blue-600 mb-4">{skill.icon}</div>
-                <h4 className="font-semibold mb-2">{skill.name}</h4>
-                <p className="text-sm text-neutral-600 dark:text-neutral-400">{skill.description}</p>
+                <div className="text-blue-600 mb-4">{item.icon}</div>
+                <h4 className="font-semibold mb-2">{item.name}</h4>
+                <p className="text-sm text-neutral-600 dark:text-neutral-400">{item.description}</p>
               </motion.div>
             ))}
           </div>
