@@ -7,7 +7,7 @@ export default function Footer() {
         <div className="text-center md:text-left">
           <h3 className="font-bold text-xl tracking-tight mb-1 text-neutral-900 dark:text-neutral-100">Elijah Chou</h3>
           <p className="text-neutral-500 text-sm">
-            Software Engineer @ JPMorganChase | BS/MS CS Emory '24 | NYU Tandon
+            Software Engineer @ JPMorganChase | BS/MS CS Emory &apos;24 | NYU Tandon
           </p>
           <p className="text-neutral-400 text-xs mt-2">
             © {new Date().getFullYear()} Elijah Chou. Built with Next.js, Tailwind CSS & Framer Motion.

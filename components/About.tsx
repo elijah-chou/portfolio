@@ -53,7 +53,7 @@ export default function About() {
               I am a Software Engineer at <strong>JPMorganChase</strong> in Atlanta. I completed my combined <strong>BS/MS in Computer Science at Emory University</strong> with Highest Honors and am pursuing further graduate studies at the <strong>NYU Tandon School of Engineering</strong>.
             </p>
             <p className="text-neutral-600 dark:text-neutral-400 mb-4 leading-relaxed">
-              My honors thesis on <em>"Creativity in Programming: A Code Distance Approach"</em> was published and recognized at <strong>CSEDU 2024</strong>. I've also contributed to research at the <strong>Georgia Tech Research Institute (GTRI)</strong> and worked with innovative R&D teams at <strong>AT&T CDO</strong> on blockchain AI provenance.
+              My honors thesis on <em>&ldquo;Creativity in Programming: A Code Distance Approach&rdquo;</em> was published and recognized at <strong>CSEDU 2024</strong>. I&apos;ve also contributed to research at the <strong>Georgia Tech Research Institute (GTRI)</strong> and worked with innovative R&D teams at <strong>AT&T CDO</strong> on blockchain AI provenance.
             </p>
             <p className="text-neutral-600 dark:text-neutral-400 leading-relaxed">
               I love building scalable backend architectures, experimenting with the newest generative AI capabilities, and collaborating in hackathons—securing top podium placements at both internal and global competitions!

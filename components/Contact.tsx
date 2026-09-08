@@ -17,7 +17,7 @@ export default function Contact() {
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Get In Touch</h2>
           <div className="w-20 h-1 bg-blue-600 mx-auto rounded-full mb-6"></div>
           <p className="text-neutral-600 dark:text-neutral-400 max-w-2xl mx-auto">
-            I'm always excited to connect regarding software engineering opportunities, AI/ML research collaborations, hackathons, or tech discussions!
+            I&apos;m always excited to connect regarding software engineering opportunities, AI/ML research collaborations, hackathons, or tech discussions!
           </p>
         </motion.div>
 
