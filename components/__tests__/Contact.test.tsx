@@ -18,11 +18,23 @@ describe("Contact Component", () => {
     );
   });
 
-  it("renders Credly certification link and publication links", () => {
+  it("renders Credly, Accredible, ORCID, Merit, and blog links", () => {
     render(<Contact />);
     expect(screen.getByRole("link", { name: /verified certifications/i })).toHaveAttribute(
       "href",
       "https://www.credly.com/users/elijah-chou/badges"
+    );
+    expect(screen.getByRole("link", { name: /accredible wallet/i })).toHaveAttribute(
+      "href",
+      "https://www.credential.net/profile/elijah-chou/wallet"
+    );
+    expect(screen.getByRole("link", { name: /orcid research profile/i })).toHaveAttribute(
+      "href",
+      "https://orcid.org/0000-0002-6272-9601"
+    );
+    expect(screen.getByRole("link", { name: /merit page academic achievements/i })).toHaveAttribute(
+      "href",
+      "https://meritpages.com/elijah-chou"
     );
     expect(screen.getByRole("link", { name: /medium articles/i })).toHaveAttribute(
       "href",

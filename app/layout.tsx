@@ -13,8 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "My Portfolio",
-  description: "Personal portfolio website",
+  title: "Elijah Chou | Software Engineer @ JPMorganChase | NYU Cyber Fellow",
+  description:
+    "Personal portfolio of Elijah Chou — Software Engineer at JPMorganChase, NYU Cyber Fellow pursuing an MS in Cybersecurity at NYU Tandon, and Emory University BS/MS Computer Science & Biology alumnus.",
 };
 
 export default function RootLayout({

@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Mail, MapPin, Award, BookOpen, Globe, ArrowUpRight } from "lucide-react";
+import { Mail, MapPin, Award, BookOpen, Globe, ArrowUpRight, GraduationCap, ShieldCheck } from "lucide-react";
 
 export default function Contact() {
   return (
@@ -17,7 +17,7 @@ export default function Contact() {
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Get In Touch</h2>
           <div className="w-20 h-1 bg-blue-600 mx-auto rounded-full mb-6"></div>
           <p className="text-neutral-600 dark:text-neutral-400 max-w-2xl mx-auto">
-            I&apos;m always excited to connect regarding software engineering opportunities, AI/ML research collaborations, hackathons, or tech discussions!
+            I&apos;m always excited to connect regarding software engineering, cybersecurity, full-stack &amp; AI/LLM systems, research collaborations, or tech discussions!
           </p>
         </motion.div>
 
@@ -69,7 +69,25 @@ export default function Contact() {
                   <h4 className="text-base font-semibold text-neutral-900 dark:text-neutral-100">Verified Certifications</h4>
                   <ArrowUpRight className="h-4 w-4 text-neutral-400 group-hover:text-blue-500 transition-colors" />
                 </div>
-                <p className="text-neutral-600 dark:text-neutral-400 text-sm mt-1">AWS Certified AI Practitioner on Credly</p>
+                <p className="text-neutral-600 dark:text-neutral-400 text-sm mt-1">Credly Badges (CC, SnowPro, Airflow, AWS AI)</p>
+              </div>
+            </a>
+
+            <a 
+              href="https://www.credential.net/profile/elijah-chou/wallet"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-start gap-4 p-5 rounded-2xl bg-neutral-50 dark:bg-neutral-800/60 border border-neutral-200 dark:border-neutral-700/80 hover:border-blue-500 transition-colors group"
+            >
+              <div className="bg-indigo-100 dark:bg-indigo-900/40 p-3 rounded-xl text-indigo-600 dark:text-indigo-400">
+                <ShieldCheck className="h-6 w-6" />
+              </div>
+              <div className="flex-grow">
+                <div className="flex items-center justify-between">
+                  <h4 className="text-base font-semibold text-neutral-900 dark:text-neutral-100">Accredible Wallet</h4>
+                  <ArrowUpRight className="h-4 w-4 text-neutral-400 group-hover:text-blue-500 transition-colors" />
+                </div>
+                <p className="text-neutral-600 dark:text-neutral-400 text-sm mt-1">Verified Digital Credentials &amp; Certificates</p>
               </div>
             </a>
           </motion.div>
@@ -82,8 +100,32 @@ export default function Contact() {
             className="space-y-6"
           >
             <div className="p-6 rounded-2xl bg-neutral-50 dark:bg-neutral-800/60 border border-neutral-200 dark:border-neutral-700/80">
-              <h3 className="text-lg font-bold mb-4 text-neutral-900 dark:text-neutral-100">Publications & Blogs</h3>
-              <div className="space-y-4 text-sm">
+              <h3 className="text-lg font-bold mb-4 text-neutral-900 dark:text-neutral-100">Profiles, Publications &amp; Blogs</h3>
+              <div className="space-y-3 text-sm">
+                <a 
+                  href="https://orcid.org/0000-0002-6272-9601" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="flex items-center justify-between p-3 rounded-xl bg-white dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700 hover:border-blue-500 transition-colors"
+                >
+                  <span className="flex items-center gap-2 font-medium">
+                    <BookOpen className="h-4 w-4 text-emerald-600" /> ORCID Research Profile (0000-0002-6272-9601)
+                  </span>
+                  <ArrowUpRight className="h-4 w-4 text-neutral-400" />
+                </a>
+
+                <a 
+                  href="https://meritpages.com/elijah-chou" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="flex items-center justify-between p-3 rounded-xl bg-white dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700 hover:border-blue-500 transition-colors"
+                >
+                  <span className="flex items-center gap-2 font-medium">
+                    <GraduationCap className="h-4 w-4 text-amber-500" /> Merit Page Academic Achievements
+                  </span>
+                  <ArrowUpRight className="h-4 w-4 text-neutral-400" />
+                </a>
+
                 <a 
                   href="https://medium.com/@elijahchou" 
                   target="_blank" 
