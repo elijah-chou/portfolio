@@ -5,55 +5,61 @@ import { ExternalLink, Code, BookOpen, Trophy } from "lucide-react";
 
 const projects = [
   {
+    title: "Measuring Creativity in Computer Programming: A Code Distance Approach",
+    badge: "Published at CSEDU 2024",
+    description:
+      "Honors Thesis earning Highest Honors at Emory University & published paper ('A Code Distance Approach to Measure Originality in Computer Programming'). Parsed student code into Abstract Syntax Trees (ASTs) and used tree edit distances (Zhang-Shasha) to calculate originality and creativity metrics in programming education.",
+    tags: ["Python", "Abstract Syntax Trees", "Research", "CSEDU 2024", "ORCID"],
+    liveUrl: "https://etd.library.emory.edu/concern/etds/b8515p78f",
+    githubUrl: "https://github.com/elijah-chou/HonorsThesis-CodeToAST",
+    type: "paper",
+  },
+  {
     title: "AI Prompt Optimization MCP",
     badge: "2nd Place Winner",
-    description: "Built for the JPMorganChase Global Hackathon in Atlanta. An MCP server that optimizes prompts by stripping tokens, recommends cost-effective models, and caches prompt embeddings in a vector DB to bypass copilot agent invocations.",
+    description:
+      "Built for the JPMorganChase Global Hackathon in Atlanta. An MCP server that optimizes prompts by stripping tokens, recommends cost-effective models, and caches prompt embeddings in a vector DB to bypass copilot agent invocations.",
     tags: ["Model Context Protocol", "Vector DB", "LLM Optimization", "Python"],
     githubUrl: "https://github.com/elijah-chou",
-    type: "hackathon"
+    type: "hackathon",
   },
   {
     title: "Project Vibe Validator",
     badge: "AI Startup Evaluation",
-    description: "A Next.js App Router application demonstrating real-time web search (Tavily) and experimental LLM reasoning (Gemini 2.5 Flash) to validate and score startup ideas with market insights.",
+    description:
+      "A Next.js App Router application demonstrating real-time web search (Tavily) and experimental LLM reasoning (Gemini 2.5 Flash) to validate and score startup ideas with market insights.",
     tags: ["Next.js", "TypeScript", "Tailwind CSS", "Gemini 2.5 Flash", "Tavily"],
     githubUrl: "https://github.com/elijah-chou/project-vibe-validator",
-    type: "project"
-  },
-  {
-    title: "Creativity in Programming: A Code Distance Approach",
-    badge: "Published at CSEDU 2024",
-    description: "Honors Thesis earning Highest Honors at Emory University. Parsed student code into Abstract Syntax Trees (ASTs) and used tree edit distances (Zhang-Shasha) to calculate creativity metrics in programming education.",
-    tags: ["Python", "Abstract Syntax Trees", "Research", "CSEDU 2024"],
-    liveUrl: "https://etd.library.emory.edu/concern/etds/b8515p78f",
-    githubUrl: "https://github.com/elijah-chou/HonorsThesis-CodeToAST",
-    type: "paper"
+    type: "project",
   },
   {
     title: "ChatGeminiPro & Legion Writing Assistant",
     badge: "Google PaLM & Gemini",
-    description: "AI-powered writing and conversational assistant daemon tools. Integrated Google's Gemini Pro and PaLM APIs for real-time prompt feedback, style suggestions, and autonomous assistance daemons.",
+    description:
+      "AI-powered writing and conversational assistant daemon tools. Integrated Google's Gemini Pro and PaLM APIs for real-time prompt feedback, style suggestions, and autonomous assistance daemons.",
     tags: ["React", "Google Gemini Pro", "PaLM API", "Human-AI Interaction"],
     liveUrl: "https://elijah-chou.github.io/humanAIinteraction/",
     githubUrl: "https://github.com/elijah-chou/GeminiPro-chatbot",
-    type: "project"
+    type: "project",
   },
   {
-    title: "5GSpear: Naval Base Fuel Ordering System",
+    title: "5GSpear & Aircraft Maintenance Scheduling Optimization",
     badge: "GTRI Research",
-    description: "Developed at the Georgia Tech Research Institute (Aerospace, Transportation & Advanced Systems Lab). Python Flask MVC web application with PostgreSQL schemas and interactive React mapping layers.",
-    tags: ["Python Flask", "PostgreSQL", "React", "Docker", "GTRI"],
+    description:
+      "Developed at the Georgia Tech Research Institute. Revamped 30+ MVC features and 8 PostgreSQL screens for a Python Flask web app, and conducted aircraft maintenance scheduling optimization research leveraging Google OR-Tools, Pytest, and Hypothesis.",
+    tags: ["Python Flask", "Google OR-Tools", "PostgreSQL", "Pytest", "GitLab CI/CD"],
     githubUrl: "https://github.com/elijah-chou",
-    type: "project"
+    type: "project",
   },
   {
     title: "Bees Knees: Varroa Mite Agent-Based Simulation",
     badge: "Agent-Based Modeling",
-    description: "NetLogo simulation modeling complex biological relationships between worker honeybees and varroa mites transmitting Deformed Wing Virus (DWV), evaluating treatment efficacy over time.",
+    description:
+      "NetLogo simulation modeling complex biological relationships between worker honeybees and varroa mites transmitting Deformed Wing Virus (DWV), evaluating treatment efficacy over time.",
     tags: ["NetLogo", "Agent-Based Simulation", "Complex Systems"],
     githubUrl: "https://github.com/elijah-chou/Bees-Knees-An-Agent-Based-Model-of-Varroa-Mite-Infestation-of-Bee-Hives",
-    type: "project"
-  }
+    type: "project",
+  },
 ];
 
 export default function Projects() {
@@ -67,7 +73,7 @@ export default function Projects() {
           transition={{ duration: 0.5 }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Featured Projects & Research</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">Featured Projects &amp; Research</h2>
           <div className="w-20 h-1 bg-blue-600 mx-auto rounded-full"></div>
         </motion.div>
 
@@ -97,7 +103,7 @@ export default function Projects() {
               </p>
 
               <div className="flex flex-wrap gap-1.5 mb-6">
-                {project.tags.map(tag => (
+                {project.tags.map((tag) => (
                   <span key={tag} className="px-2.5 py-1 bg-neutral-100 dark:bg-neutral-700/60 rounded-md text-xs font-medium text-neutral-700 dark:text-neutral-300">
                     {tag}
                   </span>

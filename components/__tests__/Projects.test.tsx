@@ -12,7 +12,11 @@ describe("Projects Component", () => {
     render(<Projects />);
     expect(screen.getByRole("heading", { name: "AI Prompt Optimization MCP" })).toBeInTheDocument();
     expect(screen.getByRole("heading", { name: "Project Vibe Validator" })).toBeInTheDocument();
-    expect(screen.getByRole("heading", { name: "Creativity in Programming: A Code Distance Approach" })).toBeInTheDocument();
+    expect(
+      screen.getByRole("heading", {
+        name: "Measuring Creativity in Computer Programming: A Code Distance Approach",
+      })
+    ).toBeInTheDocument();
     expect(screen.getByRole("heading", { name: "ChatGeminiPro & Legion Writing Assistant" })).toBeInTheDocument();
   });
 

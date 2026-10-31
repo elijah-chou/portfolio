@@ -6,13 +6,14 @@ describe("Hero Component", () => {
   it("renders Elijah Chou's name and role", () => {
     render(<Hero />);
     expect(screen.getByText("Elijah Chou")).toBeInTheDocument();
-    expect(screen.getByText(/Software Engineer @ JPMorganChase/i)).toBeInTheDocument();
+    expect(screen.getByText(/Software Engineer @ JPMorganChase \| NYU Cyber Fellow/i)).toBeInTheDocument();
   });
 
   it("renders educational credentials and certifications", () => {
     render(<Hero />);
     expect(screen.getByText(/Emory BS\/MS in CS/i)).toBeInTheDocument();
-    expect(screen.getByText(/NYU Tandon School of Engineering/i)).toBeInTheDocument();
+    expect(screen.getAllByText(/NYU Tandon School of Engineering/i).length).toBeGreaterThan(0);
+    expect(screen.getByText(/Certified in Cybersecurity \(CC\)/i)).toBeInTheDocument();
     expect(screen.getByText(/AWS Certified AI Practitioner/i)).toBeInTheDocument();
   });
 

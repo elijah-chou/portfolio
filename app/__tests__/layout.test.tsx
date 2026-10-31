@@ -10,8 +10,12 @@ import RootLayout, { metadata } from "../layout";
 
 describe("RootLayout", () => {
   it("exports portfolio metadata", () => {
-    expect(metadata.title).toBe("My Portfolio");
-    expect(metadata.description).toBe("Personal portfolio website");
+    expect(metadata.title).toBe(
+      "Elijah Chou | Software Engineer @ JPMorganChase | NYU Cyber Fellow"
+    );
+    expect(metadata.description).toBe(
+      "Personal portfolio of Elijah Chou — Software Engineer at JPMorganChase, NYU Cyber Fellow pursuing an MS in Cybersecurity at NYU Tandon, and Emory University BS/MS Computer Science & Biology alumnus."
+    );
   });
 
   it("renders children inside the layout structure with font variables", () => {
